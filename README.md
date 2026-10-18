@@ -1,6 +1,8 @@
-## Project Overview (Sanitized for Academic Review)
+## Project Overview
+**AIQC TEND (v1.0)** is an AI-powered QA automation prototype designed to automate **bug reproduction and verification** directly from **Jira** tickets. Developed by **Nguyen Thi Yen Ly** (QC Member at Spiraledge Vietnam), the system leverages **LLMs (Gemini + OpenAI)** alongside **Playwright** browser automation, integrating **human-in-the-loop (HITL)** control via **Google Chat**.
 
-**AIQC TEND** is an AI-powered QA automation system that automates **bug reproduction and verification** from **Jira** tickets using **LLMs (Gemini + OpenAI)** and **Playwright** browser automation, with **human-in-the-loop** control via **Google Chat**. The goal is to shorten QA triage time by turning bug reports (description + video) into executable test steps, running them automatically, and pushing verified evidence back to Jira.
+The primary objective is to significantly reduce QA triage time by automatically translating multi-modal bug reports (text descriptions and attached videos) into executable test steps. The system executes these actions automatically, handles timeouts via human intervention, and pushes verified video evidence back to Jira. To validate its real-world viability and reliability, this initial framework was empirically tested on **70 actual production Jira tickets**.
+
 
 ### What the system does
 - **Monitors Jira** for newly assigned tickets (polling schedule)
